@@ -14,8 +14,6 @@ const scrollHeader = () => {
 
     }
 }
-// scrolling 
-// toggling 
 window.addEventListener('scroll', scrollHeader)
 const menuToggleIcon = selectElement('#menu-toggle-icon');
 const toggleMenu = () => {
@@ -36,9 +34,9 @@ formOpenBtn.addEventListener('click', () =>
 formcloseBtn.addEventListener('click', () =>
     searchFormContainer.classList.remove('activated'));
 
-window,addEventListener('keyup', event =>{
-    if(event.key === 'Escape')
-    searchFormContainer.classList.remove('activated')
+window, addEventListener('keyup', event => {
+    if (event.key === 'Escape')
+        searchFormContainer.classList.remove('activated')
 
 })
 
@@ -62,3 +60,16 @@ themeToggleBtn.addEventListener('click', () => {
     }
 })
 selectElement();
+
+const swiper = new swiper('.swiper',
+{
+    slidesPerView: 1,
+    spaceBetween: 20,
+    navigation:{
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+    pagination: {
+        el: '.swiper-pagination'
+    }
+})
