@@ -337,39 +337,37 @@ i {
   background-color: var(--light-color-alt);
   transform: rotate(45deg);
 }
-.title{
+.title {
   color: var(--light-color);
-
 }
-.article-title{
+.article-title {
   font-size: var(--font-size-md);
 }
-.sidebar{
+.sidebar {
   background-color: var(--secondary-background-color);
   padding: 2.5rem;
 }
-.trending-news-box{
+.trending-news-box {
   display: flex;
   flex-direction: column;
   gap: var(--gap);
   padding-block: 2rem;
   border: 1px solid var(--transparent-light-color);
 }
-.trending-news-box:last-of-type{
+.trending-news-box:last-of-type {
   border-bottom: none;
 }
-.trending-news-image-box{
+.trending-news-image-box {
   position: relative;
   width: 100%;
   height: var(--item-min-height-sm);
-
 }
-.featured-content-title{
+.featured-content-title {
   font-size: var(--font-size-md);
   text-align: center;
   padding: 1rem;
 }
-.trending-number{
+.trending-number {
   position: absolute;
   top: -1rem;
   left: -1rem;
@@ -380,38 +378,41 @@ i {
   color: var(--light-color);
   border-radius: 50%;
 }
-.trending-news-data .article-title{
+.trending-news-data .article-title {
   font-size: var(--font-size-sm);
-
 }
-.trending-news-box:hover .article-title{
+.trending-news-box:hover .article-title {
   color: var(--light-color-alt);
 }
-.section-title{
+.section-title {
   position: relative;
   font-size: var(--font-size-md);
   margin-bottom: 6rem;
 }
-.section-title::before{
+.section-title::before {
   content: attr(data-name);
   font-size: var(--font-size-lg);
   text-transform: uppercase;
-  opacity: .1;
+  opacity: 0.1;
   position: absolute;
-  top:1.5rem;
+  top: 1.5rem;
   left: 2rem;
 }
-.artcicle.swiper-slide{
+.article.swiper-slide {
   height: 40rem;
 }
-.swiper-wrapper{
+.swiper-wrapper {
   height: auto;
 }
-.swiper-controls{
+.swiper-controls {
   width: 3.5rem;
   height: 3.5rem;
   background-color: var(--secondary-background-color);
-}.swiper-controls::after{
+}
+.swiper-controls::after {
   font-size: 1.6rem;
   color: var(--light-color);
+}
+.swiper-pagination-bullet {
+  background-color: red;
 }

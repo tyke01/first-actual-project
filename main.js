@@ -59,9 +59,9 @@ themeToggleBtn.addEventListener('click', () => {
         localStorage.removeItem('currentTheme');
     }
 })
-selectElement();
 
-const swiper = new swiper('.swiper',
+
+const swiper = new Swiper('.swiper',
 {
     slidesPerView: 1,
     spaceBetween: 20,
