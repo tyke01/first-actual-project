@@ -1,58 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>shoes.com | Home</title>
 
     <!-- styles -->
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css" />
     <!-- Media files -->
-    <!-- favicon -->    
-    <link rel="icon" type="image/png" sizes="32x32" href="images/icons8-shoes-1.png">
+    <!-- favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/icons8-shoes-1.png"
+    />
 
     <!-- Remix icons -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header class="header" id="header">
-        <nav class="navbar container">
-            <a href="/main.html">
-                <h2 class="logo">
-                    Sneaker Shop
-                </h2>
-            </a>
+      <nav class="navbar container">
+        <a href="/main.html">
+          <h2 class="logo">Sneaker Shop</h2>
+        </a>
 
-            <div class="menu" id="menu">
-                <ul class="list">
-                    <li class="list-item">
-                        <a href="#" class="list-link">Shop</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link">News</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link">Reviews</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link">Contact us</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link">Sign up</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="#" class="list-link">Sign in</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="menu" id="menu">
+          <ul class="list">
+            <li class="list-item">
+              <a href="#" class="list-link current">Home</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Shop</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">News</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Reviews</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Contact us</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Sign up</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Sign in</a>
+            </li>
+          </ul>
+        </div>
+        <div class="list list-right">
+          <button
+            type="button"
+            class="btn place-items-center"
+            id="theme-toggle-btn"
+            title="btn"
+          >
+            <i class="ri-sun-line sun-icon"></i>
+            <i class="ri-moon-line moon-icon"></i>
+          </button>
 
+          <button
+            type="button"
+            class="btn place-items-center"
+            id="search-icon"
+            title="btn"
+          >
+            <i class="ri-search-line"></i>
+          </button>
 
+          <button
+            type="button"
+            class="btn place-items-center screen-lg-hidden menu-toggle-icon"
+            id="menu-toggle-icon"
+            title="btn"
+          >
+            <i class="ri-menu-line open-menu-icon"></i>
+            <i class="ri-close-line close-menu-icon"></i>
+          </button>
 
-        </nav>
+          <a href="#" class="list-link screen-sn-hidden">Sign in</a>
+          <a href="#" class="list-link screen-sn-hidden btt sign-up-btn">
+            <span>Sign up</span></a
+          >
+        </div>
+      </nav>
     </header>
-    
+
+    <div class="search-form-container container" id="search-form-container">
+      <div class="form-container-inner">
+        <form action="" class="form">
+          <input type="text" class="form-input" placeholder="search" />
+          <button class="btn form-btn" type="submit" title="submit">
+            <i class="ri-search-line"></i>
+          </button>
+        </form>
+
+        <span class="form-note">or press ESC to close</span>
+      </div>
+      <button
+        class="btn form-close-btn place-items-center"
+        id="form-close-btn"
+        title="close"
+      >
+        <i class="ri-close-line"></i>
+      </button>
+    </div>
+
+    <div class="section featured-articles section-header-offset">
+      <div class="featured-articles-container container d-grid">
+        <div class="featured-content d-grid">
+          <div class="headline-banner">
+            <h3 class="headline fancy-border">
+              <span class="pllace-items-center"> Breaking news </span>
+            </h3>
+            <span class="headline-description">
+              Nike releases new and better sneakers
+            </span>
+          </div>
+
+          <a href="#" class="article featured-article eatured-article-1">
+            <img src="images/nike.jpeg" alt="no img" class="article-image" />
+            <span class="article-category">
+                comfy Nikes 
+            </span>
+            <div class="article-data-container">
+                <div class="article-data">
+                    <span>Dec 20th 2023. </span>
+                    <span class="article-data-spacer"></span>
+                    <span>sold out in 10 Hours</span>
+                </div>
+                <h3 class="title article-title">
+                    how many will you want?
+                </h3>
+            </div>
+          </a>
+          <a href="#" class="article featured-article eatured-article-1">
+            <img src="images/nike.jpeg" alt="no img" class="article-image" />
+            <span class="article-category">
+                Jordans 
+            </span>
+            <div class="article-data-container">
+                <div class="article-data">
+                    <span>may 20th 2023. </span>
+                    <span class="article-data-spacer"></span>
+                    <span>sold out in 2 Hours</span>
+                </div>
+                <h3 class="title article-title">
+                    What is your choice?
+                </h3>
+            </div>
+          </a>
+          <a href="#" class="article featured-article eatured-article-1">
+            <img src="images/nike.jpeg" alt="no img" class="article-image" />
+            <span class="article-category">
+                Sharks 
+            </span>
+            <div class="article-data-container">
+                <div class="article-data">
+                    <span>Jan 3rd 2023. </span>
+                    <span class="article-data-spacer"></span>
+                    <span>sold out</span>
+                </div>
+                <h3 class="title article-title">
+                    pre-order now?
+                </h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
