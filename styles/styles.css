@@ -37,10 +37,9 @@ body.light-theme {
   --primary-background-color: #fff;
   --secondary-background-color: #f1f1f1;
   --hover-light-color: #fff;
-  --transparent-light-color: #252830;
-  --transparent-dark-color: rgba(0, 0, 0, 0.1);
+  --transparent-dark-color: #f1f1f1;
+  --transparent-light-color: rgba(0, 0, 0, 0.1);
 }
-/*  */
 
 * {
   margin: 0;
@@ -49,7 +48,6 @@ body.light-theme {
 }
 /* shared properties */
 html {
-  /* font-size: 10px; */
   font-size: 62.5%;
 }
 body {
@@ -323,6 +321,9 @@ i {
 .article:hover .article-data-spacer {
   background-color: var(--hover-light-color);
 }
+.article:hover .article-title{
+  color: var(--hover-light-color);
+}
 .article-data {
   display: flex;
   align-items: center;
@@ -377,6 +378,7 @@ i {
   background-color: var(--secondary-background-color);
   color: var(--light-color);
   border-radius: 50%;
+  z-index: 9; ;
 }
 .trending-news-data .article-title {
   font-size: var(--font-size-sm);
@@ -398,6 +400,9 @@ i {
   top: 1.5rem;
   left: 2rem;
 }
+.quick-read .swiper-slide{
+  cursor: grab;
+}
 .article.swiper-slide {
   height: 40rem;
 }
@@ -408,7 +413,11 @@ i {
   width: 2rem;
   height: 2rem;
   background-color: var(--secondary-background-color);
-  /* background-color: #12bcfe; */
+}
+.swiper-button-next,
+.swiper-button-prev{
+  background-color: var(--transparent-dark-color);
+  font-size: 1rem;
 }
 .swiper-controls::after {
   font-size: 1.2rem;
@@ -419,7 +428,6 @@ i {
   bottom: 0.5rem !important;
 }
 .swiper-pagination-bullet {
-  /* background-color: var(--light-color); */
   width: 10px;
   height: 10px;
   background-color: #000;
@@ -598,3 +606,10 @@ i {
   margin-top: auto;
   margin-bottom: 0;
 }
+
+
+
+
+
+
+
